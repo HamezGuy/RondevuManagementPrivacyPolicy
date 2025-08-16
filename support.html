@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rondevu Management Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #764ba2;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 10px 5px;
+            transition: transform 0.3s;
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Rondevu Management Support Center</h1>
+            
+            <div class="contact-box">
+                <h2 style="color: white; margin-top: 0;">Need Help Managing Your Events?</h2>
+                <p style="margin-bottom: 15px;">Our support team is here to help you succeed!</p>
+                <a href="mailto:jgui@rondevuevents.com">jgui@rondevuevents.com</a>
+            </div>
+            
+            <div class="section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I create my first event?</div>
+                    <div>Open the Rondevu Management app, tap the "+" button, fill in your event details including title, date, time, location, and description. Add ticket types and pricing, then publish your event to make it live.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I scan tickets at my event?</div>
+                    <div>Navigate to your event in the app, tap "Scan Tickets", and use your device's camera to scan attendee QR codes. The app will verify ticket validity and mark them as checked in.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I set up ticket pricing and types?</div>
+                    <div>When creating or editing an event, go to the "Tickets" section. You can create multiple ticket types (General Admission, VIP, Early Bird, etc.) with different prices and availability limits.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I manage my venue profile?</div>
+                    <div>Go to your profile tab, select "Venue Settings", and update your venue information including capacity, amenities, photos, and operating hours. This helps event organizers find and book your venue.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I track ticket sales and revenue?</div>
+                    <div>Access the "Analytics" section for each event to view real-time ticket sales, revenue, attendee demographics, and sales trends. You can export reports for accounting purposes.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do payouts work?</div>
+                    <div>Ticket revenue is processed through Stripe and automatically transferred to your connected bank account. Payouts typically occur 2-7 business days after the event, minus processing fees.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I offer refunds to customers?</div>
+                    <div>Yes, you can process refunds directly through the app. Go to your event, select "Manage Tickets", find the order, and tap "Refund". Refunds are processed through Stripe.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do I promote my events?</div>
+                    <div>Your events are automatically listed in the Rondevu consumer app. You can also share event links on social media, enable early bird pricing, and use the built-in promotional tools.</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Event Creation:</strong> Build comprehensive event listings with photos, videos, and detailed information</li>
+                    <li><strong>Ticket Management:</strong> Create multiple ticket types, set prices, and manage inventory</li>
+                    <li><strong>QR Code Scanning:</strong> Fast and secure check-in for attendees</li>
+                    <li><strong>Real-time Analytics:</strong> Track sales, attendance, and revenue</li>
+                    <li><strong>Venue Management:</strong> Showcase your venue to event organizers</li>
+                    <li><strong>Artist Profiles:</strong> Build your brand and connect with venues</li>
+                    <li><strong>Payment Processing:</strong> Secure transactions through Stripe</li>
+                    <li><strong>Customer Communication:</strong> Send updates and announcements to ticket holders</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Getting Started Guide</h2>
+                <ol>
+                    <li><strong>Download the App:</strong> Get Rondevu Management from the App Store</li>
+                    <li><strong>Create Your Account:</strong> Sign up with your email or phone number</li>
+                    <li><strong>Set Up Your Profile:</strong> Add your organization or venue details</li>
+                    <li><strong>Connect Stripe:</strong> Link your bank account for payments</li>
+                    <li><strong>Create Your First Event:</strong> Add all event details and ticket types</li>
+                    <li><strong>Publish and Promote:</strong> Make your event live and share it</li>
+                    <li><strong>Manage Sales:</strong> Track tickets and communicate with attendees</li>
+                    <li><strong>Day of Event:</strong> Use QR scanner for smooth check-in</li>
+                </ol>
+            </div>
+            
+            <div class="section">
+                <h2>Technical Support</h2>
+                <p>Experiencing technical issues? Try these steps:</p>
+                <ul>
+                    <li>Update to the latest version of Rondevu Management</li>
+                    <li>Check your internet connection</li>
+                    <li>Restart the app</li>
+                    <li>Ensure camera permissions are enabled for QR scanning</li>
+                    <li>Clear app cache (iOS: offload app in Settings)</li>
+                    <li>If issues persist, contact us at <a href="mailto:jgui@rondevuevents.com">jgui@rondevuevents.com</a></li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Safety & Compliance</h2>
+                <ul>
+                    <li>All payment data is securely processed through Stripe</li>
+                    <li>We comply with PCI DSS standards for payment security</li>
+                    <li>Event data is backed up regularly</li>
+                    <li>Review our <a href="https://hamezguy.github.io/RondevuManagementPrivacyPolicy/privacy-policy.html">Privacy Policy</a> and <a href="https://hamezguy.github.io/RondevuManagementPrivacyPolicy/terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Contact Us</h2>
+                <p><strong>Email:</strong> <a href="mailto:jgui@rondevuevents.com">jgui@rondevuevents.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+                <p><strong>Business Hours:</strong> Monday - Friday, 9 AM - 6 PM PST</p>
+                <p><strong>Priority Support:</strong> For urgent event-day issues, include "URGENT" in your subject line</p>
+            </div>
+            
+            <div class="footer">
+                <p>&copy; 2024 Rondevu Events. All rights reserved.</p>
+                <div style="margin-top: 15px;">
+                    <a href="https://hamezguy.github.io/RondevuManagementPrivacyPolicy/privacy-policy.html" class="button">Privacy Policy</a>
+                    <a href="https://hamezguy.github.io/RondevuManagementPrivacyPolicy/terms-of-service.html" class="button">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
